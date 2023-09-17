@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SenseExplore - Sobre</title>
+    <title>SenseExplore - Home</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="SenseExplore/script.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   
 </head>
-<body>
-    
-    <audio autoplay>
-        <source src="sobretexto.mp3" type="audio/mp3">
-    </audio>
 
+<body>
     <div class="hero">
 
+   <figure >
+    <img class="bgimg" src="SenseExplore/img/firewatchteste.jpg" alt="">
+   </figure>
         
         <nav>
             <img src="img/logo.png" class="logo">
@@ -45,37 +44,33 @@
                 <script type="text/javascript">
                     const sobre = new Audio();
                     sobre.src = "sobre.mp3";
+
+                    const sobretexto = new Audio();
+                    sobretexto.src = "sobretexto.mp3";
+
+                    function handleKeyDown(event) {
+        if (event.key === 'Enter') {
+            sobretexto.play(); // Reproduz o áudio "home"
+            window.location.href = "sobre.html";
+        }
+    }
+                    
                 </script>
-                
             </ul>
         </nav>
-
-
-    <div class="sobrecontainer">
-
-            <h1>Sobre o nosso projeto</h1>
-        
-            <p>
-                Um grupo de estudantes criou uma aplicação web destinada a melhorar a vida de deficientes visuais e demonstrar aos não deficientes a perspectiva do mundo para essas pessoas. Este projeto foi desenvolvido como parte de uma participação na feira tecnológica e cultural da ETEC MCM e é uma  realização que aborda o Décimo Objetivo de Desenvolvimento Sustentável (ODS) da ONU: "Redução das Desigualdades".
-                
-
-
-            </p>
-
-            <p>
-                A ODS 10 da ONU visa reduzir as desigualdades. Ela reconhece que, para alcançar um mundo verdadeiramente sustentável, é fundamental enfrentar questões de desigualdade e inclusão. Um dos grupos mais vulneráveis da sociedade são os deficientes visuais, que muitas vezes enfrentam barreiras significativas na participação plena em atividades cotidianas.
-            </p>
-
-            <p>
-                Pessoas com deficiência visual enfrentam uma série de desafios ao navegar na web e utilizar aplicativos. Isso inclui a dificuldade em ler textos, entender layouts complicados, navegar em menus e botões, e acessar conteúdo multimídia, como vídeos e imagens. Sem as devidas adaptações, esses obstáculos podem resultar em exclusão digital.
-            </p>
-        
-
+        <div class="content">
+            <h1>SenseExplore</h1>
+            <p>Explore o mundo com a sua audição</p>
+            <figure>
+                <img class="homepage" src="img/homepage2.png" alt="">
+            </figure>
+          
+        </div>
     </div>
-
-  <footer>
-    <p>SenseExplore  -  2°C  -  2023</p>
-</footer>
-
+    <footer>
+        <p>SenseExplore       2°C       2023</p>
+    </footer>
+ 
+    
 </body>
 </html>
