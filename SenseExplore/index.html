@@ -7,6 +7,9 @@
     <title>SenseExplore</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="SenseExplore/script.js"></script>
+    <link rel="shortcut icon" href="SenseExplore/img/favicon.ico" type="image/x-icon">
+  
 </head>
 <body>
     <div class="hero">
@@ -18,17 +21,55 @@
         <nav>
             <img src="img/logo.png" class="logo">
             <ul>
-                <li><a href="index.html" class="nav-link">HOME</a></li>
-                <li><a href="iniciar.html" class="nav-link">INICIAR</a></li>
-                <li><a href="comofunciona.html" class="nav-link">COMO FUNCIONA</a></li>
-                <li><a href="sobre.html" class="nav-link">SOBRE</a></li>
+                <li><a onfocus="home.play()" href="index.html" class="nav-link">HOME</a></li>
+                <script type="text/javascript">
+                    const home = new Audio();
+                    home.src = "home.mp3";
+                </script>
+
+                <li><a onfocus="iniciar.play()" href="iniciar.html" class="nav-link">INICIAR</a></li>
+                <script type="text/javascript">
+                    const iniciar = new Audio();
+                    iniciar.src = "iniciar.mp3";
+                </script>
+
+                <li><a onfocus="comofunciona.play()" href="comofunciona.html" class="nav-link">COMO FUNCIONA</a></li>
+                <script type="text/javascript">
+                    const comofunciona = new Audio();
+                    comofunciona.src = "comofunciona.mp3";
+                </script>
+
+                <li><a onfocus="sobre.play()" onkeypress="sobretexto.play()" href="sobre.html" class="nav-link">SOBRE</a></li>
+                <script type="text/javascript">
+                    const sobre = new Audio();
+                    sobre.src = "sobre.mp3";
+
+                    const sobretexto = new Audio();
+                    sobretexto.src = "sobretexto.mp3";
+
+                    function handleKeyDown(event) {
+        if (event.key === 'Enter') {
+            sobretexto.play(); // Reproduz o áudio "home"
+            window.location.href = "sobre.html";
+        }
+    }
+                    
+                </script>
             </ul>
         </nav>
         <div class="content">
             <h1>SenseExplore</h1>
             <p>Explore o mundo com a sua audição</p>
+            <figure>
+                <img class="homepage" src="SenseExplore/img/logo.png" alt="">
+            </figure>
+          
         </div>
     </div>
+    <footer>
+        <p>SenseExplore  -  2°C  -  2023</p>
+    </footer>
+ 
     
 </body>
 </html>

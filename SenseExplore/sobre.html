@@ -9,16 +9,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <audio autoplay>
+        <source src="sobretexto.mp3" type="audio/mp3">
+    </audio>
+
     <div class="hero">
 
         
         <nav>
             <img src="img/logo.png" class="logo">
             <ul>
-                <li><a href="index.html" class="nav-link">HOME</a></li>
-                <li><a href="iniciar.html" class="nav-link">INICIAR</a></li>
-                <li><a href="comofunciona.html" class="nav-link">COMO FUNCIONA</a></li>
-                <li><a href="sobre.html" class="nav-link">SOBRE</a></li>
+                <li><a onfocus="home.play()" href="index.html" class="nav-link">HOME</a></li>
+                <script type="text/javascript">
+                    const home = new Audio();
+                    home.src = "home.mp3";
+                </script>
+
+                <li><a onfocus="iniciar.play()" href="iniciar.html" class="nav-link">INICIAR</a></li>
+                <script type="text/javascript">
+                    const iniciar = new Audio();
+                    iniciar.src = "iniciar.mp3";
+                </script>
+
+                <li><a onfocus="comofunciona.play()" href="comofunciona.html" class="nav-link">COMO FUNCIONA</a></li>
+                <script type="text/javascript">
+                    const comofunciona = new Audio();
+                    comofunciona.src = "comofunciona.mp3";
+                </script>
+
+                <li><a onfocus="sobre.play()" onkeypress="sobretexto.play()" href="sobre.html" class="nav-link">SOBRE</a></li>
+                <script type="text/javascript">
+                    const sobre = new Audio();
+                    sobre.src = "sobre.mp3";
+                </script>
+                
             </ul>
         </nav>
 
@@ -26,7 +51,7 @@
   <div class="sobrecontainer">
 
     <p>
-        Um grupo de estudantes criou uma aplicação web destinada a melhorar a vida de deficientes visuais. Este projeto foi desenvolvido como parte de uma participação na feira tecnológica e cultural da ETEC MCM e é uma  realização que aborda o Décimo Objetivo de Desenvolvimento Sustentável (ODS) da ONU: "Redução das Desigualdades".
+        Um grupo de estudantes criou uma aplicação web destinada a melhorar a vida de deficientes visuais e demonstrar aos não deficientes a perspectiva do mundo para essas pessoas. Este projeto foi desenvolvido como parte de uma participação na feira tecnológica e cultural da ETEC MCM e é uma  realização que aborda o Décimo Objetivo de Desenvolvimento Sustentável (ODS) da ONU: "Redução das Desigualdades".
         
 
 
@@ -40,6 +65,12 @@
         Pessoas com deficiência visual enfrentam uma série de desafios ao navegar na web e utilizar aplicativos. Isso inclui a dificuldade em ler textos, entender layouts complicados, navegar em menus e botões, e acessar conteúdo multimídia, como vídeos e imagens. Sem as devidas adaptações, esses obstáculos podem resultar em exclusão digital.
     </p>
 
+
   </div>
+
+  <footer>
+    <p>SenseExplore  -  2°C  -  2023</p>
+</footer>
+
 </body>
 </html>
