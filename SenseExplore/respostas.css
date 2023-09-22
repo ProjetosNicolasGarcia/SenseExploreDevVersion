@@ -1,3 +1,6 @@
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +27,7 @@ h1{
 
  h5{
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
  }
 
@@ -72,7 +75,7 @@ footer p{
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
-    background-image: url(img/firewatch2.jpg);
+    background-image: url(img/mar.jpg);
     background-position: center;
     background-size: cover;
     transition: transform 0.5;

@@ -12,6 +12,11 @@
   
 </head>
 <body>
+
+    <audio autoplay>
+        <source src="selecaotexto.mp3" type="audio/mp3">
+    </audio>
+
     <nav>
         <img src="img/logo.png" class="logo">
         <ul>
@@ -27,25 +32,88 @@
             <p>Escolha a opção que mais se adequa ao que você escutou</p>
         </div>
         <div class="col">
-            <div class="card" onkeydown="window.location.href='mar.html'" tabindex="1">
-               
+
+
+
+         <!-- Card "Mar" -->
+            <audio id="mar">
+                <source src="mar.mp3" type="audio/mpeg">
+            </audio>
+            <div class="card card1" onfocus="mar.play()" onkeydown="redirectToMar(event)" tabindex="1">
                 <h5>Mar</h5>
             </div>
+            <script>
 
-            <div class="card" onkeydown="window.location.href='mar.html'" tabindex="2">
-                
+                const mar = new Audio();
+                mar.src = "Mar.mp3";
+
+                function redirectToMar(event) {
+                    if (event.keyCode === 13) { // Tecla Enter
+                        window.location.href = 'mar.html';
+                    }
+                }
+            </script>
+
+            <!-- Card "Neve" -->
+            <audio id="neve">
+                <source src="neve.mp3" type="audio/mpeg">
+            </audio>
+            <div class="card card2" onfocus="neve.play()" onkeydown="redirectToNeve(event)" tabindex="2">
                 <h5>Neve</h5>
             </div>
+            <script>
 
-            <div class="card" onkeydown="window.location.href='mar.html'" tabindex="3">
-                
+                const neve = new Audio();
+                neve.src = "neve.mp3";
+
+                function redirectToNeve(event) {
+                    if (event.keyCode === 13) { // Tecla Enter
+                        window.location.href = 'mar.html';
+                    }
+                }
+            </script>
+
+            <!-- Card "Deserto" -->
+            <audio id="deserto">
+                <source src="deserto.mp3" type="audio/mpeg">
+            </audio>
+            <div class="card card3" onfocus="deserto.play()" onkeydown="redirectToDeserto(event)" tabindex="3">
                 <h5>Deserto</h5>
             </div>
+            <script>
 
-            <div class="card" onkeydown="window.location.href='mar.html'" tabindex="4">
-              
-                <h5>Home</h5>
+                const deserto = new Audio();
+                deserto.src = "deserto.mp3";
+
+
+                function redirectToDeserto(event) {
+                   if (event.keyCode === 13) { // Tecla Enter
+                        window.location.href = 'mar.html';
+                    }
+                }
+            </script>
+
+            <!-- Card "Home" -->
+            <audio id="home">
+                <source src="home.mp3" type="audio/mpeg">
+            </audio>
+            <div class="card card4" onfocus="home.play()" onkeydown="redirectToHome(event)" tabindex="4">
+                <h5>Retorne à home</h5>
             </div>
+            <script>
+
+                const home = new Audio();
+                home.src = "home.mp3";
+
+                function redirectToHome(event) {
+                    if  (event.keyCode === 13) { // Tecla Enter
+                        window.location.href = 'home.html';
+                    }
+                }
+            </script>
+
+
+
         </div>
       </div>
     </div>

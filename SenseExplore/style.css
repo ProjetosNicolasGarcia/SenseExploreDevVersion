@@ -254,8 +254,16 @@ nav ul li a{
     font-size: 24px;
     font-weight: bold;
     padding: 7px 35px;
-   
+    padding-bottom: 15px;
+    line-height: 30px;
     margin-top: 20px;
+}
+
+.funcionacontainer h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 
@@ -277,4 +285,5 @@ footer p{
     padding: 14px 70px;
     margin-top: 20px;
 }
+
 
