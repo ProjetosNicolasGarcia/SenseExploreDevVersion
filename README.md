@@ -1,3 +1,3 @@
 # SenseExplore
 
-https://projetosnicolasgarcia.github.io/SenseExplore/SenseExplore/index.html
+https://projetosnicolasgarcia.github.io/SenseExploreDevVersion/SenseExplore/index.html
